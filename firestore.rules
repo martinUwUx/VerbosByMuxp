@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permitir lectura de verbos a cualquiera
+    match /verbs/{verbId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Permitir lectura y creación de rankings (público para competencia)
+    match /RANKS/{rankId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if false;
+    }
+
+    // Permitir gestión de partidas versus
+    match /MATCHES/{matchId} {
+      allow read, write: if true;
+    }
+    
+    // Reglas por defecto para el resto
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

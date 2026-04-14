@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 98%;
+    --foreground: 220 10% 10%;
+    --card: 220 20% 98%;
+    --card-foreground: 220 10% 10%;
+    --popover: 220 20% 98%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 15% 50%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 220 15% 90%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 220 15% 95%;
+    --accent-foreground: 220 10% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 210 100% 50%;
+    --radius: 0.75rem;
+
+    --surface-dim: 220 10% 88%;
+    --surface: 220 10% 92%;
+    --surface-bright: 220 20% 98%;
+    --surface-container-lowest: 220 20% 100%;
+    --surface-container-low: 220 20% 96%;
+    --surface-container: 220 20% 94%;
+    --surface-container-high: 220 20% 92%;
+    --surface-container-highest: 220 20% 90%;
+    --on-surface: 220 10% 10%;
+    --on-surface-variant: 220 10% 30%;
+  }
+
+  .dark {
+    --background: 220 15% 6%;
+    --foreground: 220 10% 95%;
+    --card: 220 15% 12%;
+    --card-foreground: 220 10% 95%;
+    --popover: 220 15% 6%;
+    --popover-foreground: 220 10% 95%;
+    --primary: 210 100% 75%;
+    --primary-foreground: 210 100% 10%;
+    --secondary: 220 15% 45%;
+    --secondary-foreground: 220 10% 95%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 220 15% 25%;
+    --accent-foreground: 220 10% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 210 100% 75%;
+    
+    /* Custom colors from request */
+    --surface-dim: 220 10% 6%;
+    --surface: 220 10% 8%;
+    --surface-bright: 220 10% 22%;
+    --surface-container-lowest: 220 15% 4%;
+    --surface-container-low: 220 15% 10%;
+    --surface-container: 220 15% 12%;
+    --surface-container-high: 220 15% 18%;
+    --surface-container-highest: 220 15% 22%;
+    --on-surface: 220 10% 90%;
+    --on-surface-variant: 220 10% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .bg-surface-container-lowest {
+    background-color: hsl(var(--surface-container-lowest));
+  }
+  .bg-surface-container {
+    background-color: hsl(var(--surface-container));
+  }
+  .bg-surface-container-high {
+    background-color: hsl(var(--surface-container-high));
+  }
+  .text-on-surface {
+    color: hsl(var(--on-surface));
+  }
+  .text-on-surface-variant {
+    color: hsl(var(--on-surface-variant));
+  }
+}

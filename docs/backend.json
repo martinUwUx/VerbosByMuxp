@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "Verb": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Verb",
+      "type": "object",
+      "description": "Represents a single verb with its various forms, translation, and category.",
+      "properties": {
+        "id": { "type": "string" },
+        "infinitive": { "type": "string" },
+        "pastSimple": { "type": "string" },
+        "pastParticiple": { "type": "string" },
+        "translation": { "type": "string" },
+        "type": { "type": "string", "enum": ["regular", "irregular"] }
+      },
+      "required": ["infinitive", "pastSimple", "pastParticiple", "translation", "type"]
+    },
+    "Rank": {
+      "title": "Rank",
+      "type": "object",
+      "description": "Global leaderboard entry.",
+      "properties": {
+        "name": { "type": "string" },
+        "score": { "type": "number" },
+        "timeSeconds": { "type": "number" },
+        "verbsCount": { "type": "number" },
+        "mode": { "type": "string" },
+        "timestamp": { "type": "object" }
+      },
+      "required": ["name", "score", "timeSeconds", "timestamp"]
+    },
+    "Match": {
+      "title": "Match",
+      "type": "object",
+      "description": "Versus mode match data.",
+      "properties": {
+        "id": { "type": "string" },
+        "listName": { "type": "string" },
+        "status": { "type": "string", "enum": ["waiting", "active", "finished"] },
+        "players": { "type": "object" },
+        "createdAt": { "type": "object" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["anonymous"]
+  },
+  "firestore": {
+    "/verbs/{verbId}": {
+      "schema": "Verb",
+      "description": "Public library of verbs."
+    },
+    "/RANKS/{rankId}": {
+      "schema": "Rank",
+      "description": "Global competitive rankings."
+    },
+    "/MATCHES/{matchId}": {
+      "schema": "Match",
+      "description": "Active versus sessions."
+    }
+  }
+}
