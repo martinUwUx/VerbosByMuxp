@@ -111,7 +111,7 @@ export default function Home() {
         let tabInfo = {
           badge: "¡V3 LLEGA CON DUELOS Y EL RANK GLOBAL!",
           badgeIcon: <Zap size={14} />,
-          title: "Verrrbos",
+          title: "Solitario",
           titleIcon: <Sparkles className="w-12 h-12" />,
           description: "¡Aprende tus verbos de una forma divertida! Elige tu lista, activa el cronómetro y ahora sube al podio."
         };
@@ -233,7 +233,7 @@ export default function Home() {
               </Tabs>
 
               <footer className="text-center text-on-surface-variant text-sm border-t border-border pt-8 opacity-50">
-                <p>Hecho por Muxp en Next JS, React y Google Antigravity (v3)</p>
+                <p>Hecho por Muxp (v3.0.1)</p>
               </footer>
             </div>
           </motion.main>

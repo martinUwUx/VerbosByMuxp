@@ -1,10 +1,10 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 export const metadata: Metadata = {
-  title: 'Verrrbos by muxp',
+  title: 'Verbos by muxp',
   description: 'Un quiz interactivo para q te aprendas los verbos en inglés.',
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Unbounded:wght@800&display=swap" rel="stylesheet" />
-        
+
         {/* Preload sounds */}
         <link rel="preload" href="/sounds/select.wav" as="audio" type="audio/wav" />
         <link rel="preload" href="/sounds/start.wav" as="audio" type="audio/wav" />

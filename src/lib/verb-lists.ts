@@ -64,20 +64,13 @@ export const verbLists: VerbList[] = [
   },
   {
     name: "Quiz 2 | 2°K | 21-40",
-    description: "Lista de 40 verbos regulares e irregulares para el Quiz 2. Hecha para el nuevo modo DUELOS.",
+    description: "Lista de 40 verbos regulares e irregulares para el Quiz 2. Hecha para el nuevo modo DUELO.",
     verbs: [
       'forget', 'forgive', 'get', 'give', 'go', 'grow', 'have', 'hear', 'hide', 'hold',
       'keep', 'know', 'leave', 'lend', 'let', 'lose', 'make', 'meet', 'pay', 'put',
       'deliver', 'depend', 'describe', 'develop', 'disagree', 'discover', 'earn', 'enter',
       'enjoy', 'expect', 'explain', 'finish', 'follow', 'happen', 'help', 'hope',
       'imagine', 'include', 'introduce', 'invite'
-    ]
-  },
-  {
-    name: "Quiz de prueba",
-    description: "Lista de prueba Hecha para el nuevo modo DUELO.",
-    verbs: [
-      'forget', 'forgive'
     ]
   }
 ];
