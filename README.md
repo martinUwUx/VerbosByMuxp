@@ -11,7 +11,7 @@ Bienvenido a **Verbos by Muxp**, la herramienta definitiva para dominar las conj
 - **Formatos de Quiz Configurables**: Practica exactamente lo que necesitas. Enfócate en las formas de Infinitivo, Pasado Simple o Participio Pasado.
 - **Interfaz de Quiz Interactiva**: Diseños limpios y tabulares con traducciones al español proporcionadas como pistas útiles.
 - **Retroalimentación y Aprendizaje Inmediato**: Visualiza las respuestas correctas junto a las entradas incorrectas para reforzar el aprendizaje.
-- **Diseño Premium**: Construido con los principios de **Material 3**, con sombras suaves, animaciones fluidas (Framer Motion), fondos (bgs) increíbles de **ReactBites** y una paleta de colores bien *kiut*.
+- **Diseño Premium**: Construido con los principios de **Material 3**, con sombras suaves, animaciones fluidas (Framer Motion), fondos (bgs) con musho aura de **ReactBites** y una paleta de colores bien *kiut*.
 
 ---
 
