@@ -233,7 +233,7 @@ export default function Home() {
               </Tabs>
 
               <footer className="text-center text-on-surface-variant text-sm border-t border-border pt-8 opacity-50">
-                <p>Hecho por Muxp (v3.0.1)</p>
+                <p>Hecho por Muxp bajo Apache 2.0 (v3.0.1)</p>
               </footer>
             </div>
           </motion.main>
