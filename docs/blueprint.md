@@ -1,4 +1,4 @@
-# **App Name**: VerboMaster Quiz
+# **App Name**: Verbs By Muxp
 
 ## Core Features:
 
