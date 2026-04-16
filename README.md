@@ -1,28 +1,83 @@
-# Welcome to Antigravity!
+# 🎓 Verbos By Muxp
 
-Welcome to your new developer home! Your Firebase Studio project has been successfully migrated to Antigravity.
 
-Antigravity is our next-generation, agent-first IDE designed for high-velocity, autonomous development. Because Antigravity runs locally on your machine, you now have access to powerful local workflows and fully integrated AI editing capabilities that go beyond a cloud-based web IDE.
+Bienvenido a **Verbos by Muxp**, la herramienta definitiva para dominar las conjugaciones de verbos en inglés.
 
-## Getting Started
-- **Run Locally**: Use the **Run and Debug** menu on the left sidebar to start your local development server.
-  - Or in a terminal run `npm run dev` and visit `http://localhost:9002`.
-- **Deploy**: You can deploy your changes to Firebase App Hosting by using the integrated terminal and standard Firebase CLI commands, just as you did in Firebase Studio.
-- **Cleanup**: Cleanup unused artifacts with the @cleanup workflow.
+---
 
-Enjoy the next era of AI-driven development!
+## 🚀 Funcionalidades
 
-File any bugs at https://github.com/firebase/firebase-tools/issues
+- **Selección de Verbos Personalizada**: Elige verbos por categoría: Regulares, Irregulares o Combinados. Selecciona verbos específicos o elige un conjunto aleatorio de 20 para una sesión rápida.
+- **Formatos de Quiz Configurables**: Practica exactamente lo que necesitas. Enfócate en las formas de Infinitivo, Pasado Simple o Participio Pasado.
+- **Interfaz de Quiz Interactiva**: Diseños limpios y tabulares con traducciones al español proporcionadas como pistas útiles.
+- **Retroalimentación y Aprendizaje Inmediato**: Visualiza las respuestas correctas junto a las entradas incorrectas para reforzar el aprendizaje.
+- **Diseño Premium**: Construido con los principios de **Material 3**, con sombras suaves, animaciones fluidas (Framer Motion) y una paleta de colores bien *kiut*.
 
-**Firebase Studio Export Date:** 2026-04-14
+---
+
+## 🛠️ Stack Tecnológico
+
+| Capa           | Tecnología                                                                 |
+| -------------- | -------------------------------------------------------------------------- |
+| **Framework**  | [Next.js 15](https://nextjs.org/) (App Router, TypeScript)                |
+| **Estilos**    | [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) |
+| **Componentes de UI** | [Radix UI](https://www.radix-ui.com/), [Lucide React Icons](https://lucide.dev/) |
+| **Hosting**    | [Firebase](https://firebase.google.com/) (App Hosting)   |
+| **Base de Datos** | [SupaBase](https://supabase.com/)                   |
+
+---
+
+## 📦 Primeros Pasos
+
+### Requisitos Previos
+
+- Node.js instalado en tu máquina.
+- Firebase CLI (`npm install -g firebase-tools`).
+
+### Desarrollo Local
+
+1.  **Instalar Dependencias**:
+    ```bash
+    npm install
+    ```
+
+2.  **Configuración del Entorno**:
+    Asegúrate de que tu archivo `.env.local` esté configurado con tus credenciales de Firebase.
+
+3.  **Ejecutar la App**:
+    ```bash
+    npm run dev
+    ```
+    Abre [http://localhost:9002](http://localhost:9002) en tu navegador.
 
 
 ---
 
-## Previous README.md contents:
+## 🚀 Despliegue
 
-# Firebase Studio
+Este proyecto está optimizado para **Firebase App Hosting**.
 
-This is a NextJS starter in Firebase Studio.
+Para desplegar la aplicación:
+```bash
+firebase deploy
+```
 
-To get started, take a look at src/app/page.tsx.
+> [!IMPORTANT]
+> Asegúrate de que tu `firebase.json` tenga una configuración de `apphosting` válida antes de realizar el despliegue.
+
+---
+
+## 📂 Estructura del Proyecto
+
+- `/src/app/`: Lógica central de la aplicación y enrutamiento de páginas.
+- `/src/ai/`: Configuración y esquemas de Genkit AI.
+- `/src/components/`: Componentes de interfaz de usuario reutilizables construidos con Radix y Tailwind.
+- `/docs/`: Blueprint del proyecto y documentación interna.
+- `firestore.rules`: Reglas de seguridad para la base de datos.
+
+---
+
+## ✨ Desarrollado con Antigravity
+
+Este proyecto fue migrado y mejorado utilizando **Antigravity**, IDE de IA de Google.
+
