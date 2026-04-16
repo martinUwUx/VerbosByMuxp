@@ -11,7 +11,7 @@ Bienvenido a **Verbos by Muxp**, la herramienta definitiva para dominar las conj
 - **Formatos de Quiz Configurables**: Practica exactamente lo que necesitas. Enfócate en las formas de Infinitivo, Pasado Simple o Participio Pasado.
 - **Interfaz de Quiz Interactiva**: Diseños limpios y tabulares con traducciones al español proporcionadas como pistas útiles.
 - **Retroalimentación y Aprendizaje Inmediato**: Visualiza las respuestas correctas junto a las entradas incorrectas para reforzar el aprendizaje.
-- **Diseño Premium**: Construido con los principios de **Material 3**, con sombras suaves, animaciones fluidas (Framer Motion) y una paleta de colores bien *kiut*.
+- **Diseño Premium**: Construido con los principios de **Material 3**, con sombras suaves, animaciones fluidas (Framer Motion), fondos (bgs) increíbles de **ReactBites** y una paleta de colores bien *kiut*.
 
 ---
 
@@ -42,7 +42,7 @@ Bienvenido a **Verbos by Muxp**, la herramienta definitiva para dominar las conj
     ```
 
 2.  **Configuración del Entorno**:
-    Asegúrate de que tu archivo `.env.local` esté configurado con tus credenciales de Firebase.
+    Asegúrate de que tu archivo `.env.local` esté configurado con tus variables de entorno para Supabase y Firebase.
 
 3.  **Ejecutar la App**:
     ```bash
@@ -70,10 +70,8 @@ firebase deploy
 ## 📂 Estructura del Proyecto
 
 - `/src/app/`: Lógica central de la aplicación y enrutamiento de páginas.
-- `/src/ai/`: Configuración y esquemas de Genkit AI.
-- `/src/components/`: Componentes de interfaz de usuario reutilizables construidos con Radix y Tailwind.
+- `/src/components/`: Componentes de interfaz de usuario reutilizables construidos con Radix y Tailwind, incluyendo fondos de ReactBites.
 - `/docs/`: Blueprint del proyecto y documentación interna.
-- `firestore.rules`: Reglas de seguridad para la base de datos.
 
 ---
 
